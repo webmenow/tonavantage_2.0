@@ -9,6 +9,8 @@ url: "https://tonavantage.com"
 plugins:
   - jekyll-remote-theme
   - jekyll-cloudinary
+  - jekyll-feed
+  - jekyll-seo-tag
 
 remote_theme: jekyll/minima
 
