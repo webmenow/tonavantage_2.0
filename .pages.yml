@@ -1,0 +1,73 @@
+media:
+  input: assets/images
+  output: /assets/images
+
+content:
+  - name: posts
+    label: Blog Posts
+    type: collection
+    folder: _posts
+    create: true
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: date
+        label: Date
+        type: datetime
+      - name: image
+        label: Featured Image
+        type: image
+      - name: body
+        label: Content
+        type: rich-text
+
+  - name: library
+    label: Library Items
+    type: collection
+    folder: _library
+    create: true
+    fields:
+      - name: title
+        label: Book / Document Title
+        type: string
+        required: true
+      - name: author
+        label: Author
+        type: string
+      - name: file
+        label: Attachment (PDF/Doc)
+        type: file
+      - name: body
+        label: Description
+        type: rich-text
+
+  - name: gallery
+    label: Gallery Photos
+    type: collection
+    folder: _gallery
+    create: true
+    fields:
+      - name: title
+        label: Photo Title
+        type: string
+      - name: image
+        label: Upload Photo
+        type: image
+        required: true
+
+  - name: pages
+    label: Main Pages
+    type: file
+    files:
+      - name: home
+        label: Home Page
+        file: index.md
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: body
+            label: Content
+            type: rich-text
