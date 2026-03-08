@@ -1,7 +1,24 @@
 title: Ton Avantage
 email: contact@tonavantage.com
 description: >-
-  Library and image gallery
+  Blog, library, and image gallery
 baseurl: ""
 url: "https://tonavantage.com"
-theme: minima
+
+# Настройки темы и плагинов
+plugins:
+  - jekyll-remote-theme
+  - jekyll-cloudinary
+
+remote_theme: jekyll/minima
+
+# Настройки Cloudinary (замените 'your_cloud_name' на ваш после регистрации)
+cloudinary:
+  cloud_name: your_cloud_name
+
+# Объявление коллекций
+collections:
+  library:
+    output: true
+  gallery:
+    output: true
