@@ -1,2 +1,2 @@
 # tonavantage_2.0
-jekyll cloudflare pagesSMC
+2.0 simple site : jekyll cloudflare pagesSMC
