@@ -54,11 +54,14 @@ content:
         type: image
         required: true
 
-  - name: home
+- name: home
     label: Home Page
     type: file
     path: index.md
     fields:
+      - name: layout
+        label: Layout (Do not touch)
+        type: string
       - name: title
         label: Title
         type: string
