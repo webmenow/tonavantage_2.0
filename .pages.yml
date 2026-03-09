@@ -7,7 +7,6 @@ content:
     label: Blog Posts
     type: collection
     folder: _posts
-    create: true
     fields:
       - name: title
         label: Title
@@ -27,7 +26,6 @@ content:
     label: Library Items
     type: collection
     folder: _library
-    create: true
     fields:
       - name: title
         label: Book / Document Title
@@ -47,7 +45,6 @@ content:
     label: Gallery Photos
     type: collection
     folder: _gallery
-    create: true
     fields:
       - name: title
         label: Photo Title
@@ -60,7 +57,7 @@ content:
   - name: home
     label: Home Page
     type: file
-    file: index.md
+    path: index.md
     fields:
       - name: title
         label: Title
